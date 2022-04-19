@@ -1,0 +1,94 @@
+/* цвет заголовков и навигации #212121 */
+/* цвет кнопок и подсвечивания (акцент) #2196F3 */
+/* цвет слов в кнопках #FFFFFF */
+/* цвет описания в абзацах #757575 */
+/* цвет в футере почты и тлф rgba(255, 255, 255, 0.6) */
+/* лого #000000 */
+/* цвет фона героя и футера #2F303A */
+/* цвет фона наша команда #F5F4FA */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --accent-logo-color: #000000;
+  --primary-white-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  color: var(--accent-logo-color);
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+/* Site-nav */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Auth */
+.auth-nav .link {
+  color: var(--accent-color);
+}
+
+/* Contact */
+.contact .link {
+  color: var(--primary-text-color);
+}
+
+.contact .link:hover,
+.contact .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+/* Section */
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Features */
+.features-list .title {
+  color: var(--title-text-color);
+}
+
+/* Team */
+.team-list .title {
+  color: var(--title-text-color);
+}
+
+/* Button */
+
+.button {
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+}
+
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.button.secondary {
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
+}
