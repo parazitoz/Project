@@ -6,6 +6,7 @@
 /* лого #000000 */
 /* цвет фона героя и футера #2F303A */
 /* цвет фона наша команда #F5F4FA */
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -91,4 +92,17 @@ body {
 .button.secondary {
   color: var(--accent-color);
   background-color: var(--primary-white-color);
+}
+
+/* ПОРТФОЛИО */
+
+/* Фильтр работ */
+.button.primary-filter:hover,
+.button.primary-filter:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+/* Галлерея */
+.gallery .title {
+  color: var(--title-text-color);
 }
