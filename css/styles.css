@@ -90,8 +90,6 @@ address {
 
 /* Hero */
 .hero-title {
-  color: ;
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -170,12 +168,39 @@ address {
 /* ПОРТФОЛИО */
 
 /* Фильтр работ */
-.button.primary-filter:hover,
-.button.primary-filter:focus {
+.button-filter {
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+
+.button-filter.primary-filter:hover,
+.button-filter.primary-filter:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 /* Галлерея */
+.gallery .link {
+  text-decoration: none;
+}
+
 .gallery .title {
   color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.gallery .text {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
 }
