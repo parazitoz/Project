@@ -13,6 +13,7 @@
   --accent-color: #2196f3;
   --accent-logo-color: #000000;
   --primary-white-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
 }
 
 body {
@@ -23,7 +24,18 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: solid tomato;
+}
+
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -82,17 +94,40 @@ body {
 }
 
 /* Hero */
+.hero {
+  text-align: center;
+  outline: solid tomato;
+}
+
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 /* Section */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section:nth-child(3) {
+  background-color: var(--secondary-bg-color);
+}
+
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -102,7 +137,13 @@ body {
 }
 
 /* Features */
+.features-list {
+  margin-bottom: 94px;
+}
+
 .features-list .title {
+  margin-bottom: 10px;
+  margin-top: 0;
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -112,6 +153,8 @@ body {
 }
 
 .features-list .text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -119,6 +162,9 @@ body {
 
 /* Team */
 .team-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -127,6 +173,9 @@ body {
 }
 
 .team-list .text {
+  margin-top: 0;
+  margin-bottom: 16px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -135,6 +184,12 @@ body {
 /* Button */
 
 .button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
   color: var(--title-text-color);
   background-color: var(--primary-white-color);
 
@@ -144,6 +199,9 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-decoration: none;
+  text-align: center;
+
+  cursor: pointer;
 }
 
 .button.primary {
@@ -152,6 +210,8 @@ body {
 }
 
 .button.secondary {
+  border-color: var(--accent-color);
+
   color: var(--accent-color);
   background-color: var(--primary-white-color);
 }
@@ -175,6 +235,16 @@ body {
   line-height: 1.71;
   text-decoration: none;
 }
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+
+.footer-contact {
+  margin-top: 20px;
+}
+
 .join {
   color: var(--primary-white-color);
 
@@ -187,6 +257,10 @@ body {
 /* ПОРТФОЛИО */
 
 /* Фильтр работ */
+.filter {
+  margin-bottom: 50px;
+}
+
 .button-filter {
   color: var(--title-text-color);
   background-color: var(--primary-white-color);
@@ -196,6 +270,8 @@ body {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+
+  cursor: pointer;
 }
 
 .button-filter.primary-filter:hover,
@@ -209,17 +285,24 @@ body {
 }
 
 .gallery .title {
-  color: var(--title-text-color);
+  margin-top: 20px;
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
 }
 
 .gallery .text {
-  color: var(--primary-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
+
+  color: var(--primary-text-color);
 }
