@@ -1,0 +1,213 @@
+/* Footer */
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $hero-bg-color;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+
+.footer-address {
+  text-align: center;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    // margin-right: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+
+    text-align: start;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+}
+
+.footer-contact {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address {
+  margin-bottom: 9px;
+
+  color: $primary-white-color;
+}
+
+.footer-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: rgba(255, 255, 255, 0.6);
+
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: $accent-color;
+}
+
+/* Footer Join */
+.footer-join {
+  text-align: center;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+
+  .title {
+    margin: 0;
+    margin-bottom: 20px;
+
+    color: $primary-white-color;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+}
+
+.join {
+  display: flex;
+  justify-content: center;
+}
+
+.join-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: $primary-white-color;
+  background-color: $join-bg-color;
+}
+
+.join-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.join-link:hover,
+.join-link:focus {
+  background-color: $accent-color;
+}
+
+/* Footer Form */
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  .title {
+    display: block;
+    margin-bottom: 20px;
+
+    color: $primary-white-color;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+}
+
+.submit {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+  .submit-form {
+    @media screen and (min-width: 480px) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
+
+  .icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+
+    fill: $primary-white-color;
+  }
+
+  .submit-input {
+    width: 358px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    background-color: $hero-bg-color;
+    color: $primary-white-color;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 12px;
+    }
+  }
+}
+
+.button-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  padding: 0;
+
+  color: $primary-white-color;
+  background-color: $accent-color;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+}

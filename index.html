@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
@@ -24,37 +24,46 @@
             <span class="accent">Web</span>Studio
           </a>
 
-          <ul class="site-nav list">
-            <li class="item">
-              <a href="./index.html" class="link current">Студия</a>
-            </li>
+          <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+            <svg class="menu-icons" width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+              <use class="icon-cross" href="./images/sprite.svg#icon-closemenu"></use>
+            </svg>
+          </button>
 
-            <li class="item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
-            </li>
-
-            <li class="item"><a href="" class="link">Контакты</a></li>
-          </ul>
-
-          <ul class="contact list">
-            <li class="item">
-              <a href="mailto:info@devstudio.com" class="link">
-                <svg class="icon" width="16" height="12">
-                  <use href="./images/sprite.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-
-            <li class="item">
-              <a href="tel:+380961111111" class="link">
-                <svg class="icon" width="10" height="16">
-                  <use href="./images/sprite.svg#icon-phone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+          <div class="menu" id="menu-container" data-menu>
+            <ul class="site-nav list">
+              <li class="item">
+                <a href="./index.html" class="link current">Студия</a>
+              </li>
+  
+              <li class="item">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+  
+              <li class="item"><a href="" class="link">Контакты</a></li>
+            </ul>
+  
+            <ul class="contact list">
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="link">
+                  <svg class="icon" width="16" height="12">
+                    <use href="./images/sprite.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+  
+              <li class="item">
+                <a href="tel:+380961111111" class="link">
+                  <svg class="icon" width="10" height="16">
+                    <use href="./images/sprite.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
     </header>
 
@@ -123,45 +132,47 @@
               </p>
             </li>
           </ul>
-
-          <!-- Чем занимаемся -->
-          <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="work list">
-            <li class="item">
-              <img
-                src="./images/desktop.jpg"
-                alt="Десктопные приложения"
-                width="370"
-                height="294"
-              />
-              <p class="text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
-            </li>
-
-            <li class="item">
-              <img
-                src="./images/mobile.jpg"
-                alt="Мобильные приложения"
-                width="370"
-                height="294"
-              />
-              <p class="text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
-            </li>
-
-            <li class="item">
-              <img
-                src="./images/design.jpg"
-                alt="Дизайнерские решения"
-                width="370"
-                height="294"
-              />
-              <p class="text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
-            </li>
-          </ul>
         </div>
       </section>
 
+      <!-- Чем занимаемся -->
+      <section class="work">
+        <h2 class="section-title">Чем мы занимаемся</h2>
+        <ul class="work-list list">
+          <li class="item">
+            <img
+              src="./images/desktop.jpg"
+              alt="Десктопные приложения"
+              width="370"
+              height="294"
+            />
+            <p class="text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+          </li>
+
+          <li class="item">
+            <img
+              src="./images/mobile.jpg"
+              alt="Мобильные приложения"
+              width="370"
+              height="294"
+            />
+            <p class="text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+          </li>
+
+          <li class="item">
+            <img
+              src="./images/design.jpg"
+              alt="Дизайнерские решения"
+              width="370"
+              height="294"
+            />
+            <p class="text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+          </li>
+        </ul>
+      </section>
+
       <!-- Команда -->
-      <section class="section">
+      <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
@@ -522,5 +533,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

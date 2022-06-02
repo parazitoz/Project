@@ -1,0 +1,33 @@
+/* Button */
+.button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  min-width: 200px;
+
+  color: $title-text-color;
+  background-color: $primary-white-color;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  &.primary {
+    color: $primary-white-color;
+    background-color: $accent-color;
+  }
+
+  &.secondary {
+    border-color: $accent-color;
+
+    color: $accent-color;
+    background-color: $primary-white-color;
+  }
+}

@@ -1,0 +1,50 @@
+/* Hero */
+.hero {
+  max-width: 1600px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $hero-bg-color;
+  color: $primary-white-color;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  text-align: center;
+
+  .button.primary {
+    margin-bottom: 118px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    max-width: 1200px;
+  }
+
+  @media screen and (max-width: 480px) {
+    max-width: 480px;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 768px;
+  }
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-top: 118px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}

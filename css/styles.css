@@ -75,6 +75,7 @@ img {
 .accent-inverse {
   color: var(--primary-white-color);
 }
+
 /* Main-nav */
 .main-nav {
   display: flex;
@@ -360,6 +361,7 @@ img {
   line-height: 1.18;
   text-align: center;
 }
+
 /* Follow Team */
 .follow {
   display: flex;
